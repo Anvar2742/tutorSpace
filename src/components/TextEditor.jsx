@@ -1,19 +1,6 @@
-import "./App.css";
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Tutor from "./pages/Tutor";
-
-const router = createBrowserRouter([
-    {
-        path: "tutor",
-        element: <Tutor />,
-    },
-]);
-
-function App() {
+function TextEditor() {
     return (
         <>
-            {/* <RouterProvider router={router} /> */}
             <header className="bg-slate-400 h-20">
                 <div className="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
                     <a href="#" className="text-black text-2xl font-bold">
@@ -53,4 +40,4 @@ function App() {
     );
 }
 
-export default App;
+export default TextEditor;
